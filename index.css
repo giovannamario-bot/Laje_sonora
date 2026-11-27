@@ -144,7 +144,8 @@ a {
 .card {
     background-color: var(--branco);
     border: 3px solid var(--tinta);
-    flex: 1 1 340px;
+    flex: 1 1 30%;
+    min-width: 0;
     display: flex;
     flex-direction: column;
 }
@@ -154,6 +155,7 @@ a {
 .card .foto-amarela,
 .card .foto-tinta {
     height: 170px;
+    width: 100%;
 }
 
 .foto {
@@ -188,7 +190,10 @@ a {
     margin-bottom: 16px;
 }
 
-. border-top: {2px solid var(--concreto-escuro);
+.card-info {
+    margin-top: auto;
+    padding: 16px 24px 24px 24px;
+    border-top: 2px solid var(--concreto-escuro);
     font-size: 15px;
     font-weight: 600;
     display: flex;
@@ -237,11 +242,66 @@ a {
 .rodape-colunas > * {
     flex: 1 1 0;
     min-width: 0;
-}card-info {
-    margin-top: auto;
-    padding: 16px 24px 24px 24px;
-   
+}
 
+.rodape-coluna h4 {
+    color: var(--fita);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
 
+.rodape-coluna p {
+    font-size: 15px;
+    overflow-wrap: break-word;
+}
 
+.titulo-pagina {
+    font-size: 160px;
+    margin: 24px;
+}
+
+.subtitulo-pagina {
+    margin: 16px;
+    font-size: 22px;
+    max-width: 640px;
+}
+
+.filtros {
+    margin: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filtro {
+    border: 2px solid var(--tinta);
+    padding: 8px 18px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.filtro.ativo {
+    background-color: var(--tinta);
+    color: var(--branco);
+}
+
+.lista {
+    margin: 40px;
+}
+
+.oficina {
+    padding: 32px;
+    border: 3px solid var(--tinta);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.oficina .foto {
+    height: 170px;
+    width: 240px;
+}
+
+.oficina-texto {
+    flex: auto;
 }
